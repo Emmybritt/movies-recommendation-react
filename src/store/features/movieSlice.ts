@@ -62,7 +62,12 @@ export const createMovie = createAsyncThunk("createMovie", async (action: Create
 });
 export const getAllMovies = createAsyncThunk("getMovies", async (action: void | string) => {
 	try {
-		const res = await myAxios.get(`/movies?genre=${action}`);
+		let res;
+		if (action !== undefined) {
+			res = await myAxios.get(`/movies?genre=${action}`);
+		} else {
+			res = await myAxios.get(`/movies`);
+		}
 		return res.data;
 	} catch (error) {
 		console.log("Something went wront");
