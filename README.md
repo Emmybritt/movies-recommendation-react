@@ -1,27 +1,36 @@
-# React + TypeScript + Vite
+# Movies API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a RESTful API for managing movie data.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+     - [Installation](#installation)
+     - [Database Setup](#database-setup)
+     - [Running the Application](#running-the-application)
+- [API Endpoints](#api-endpoints)
+- [Authentication](#authentication)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before you begin, ensure you have met the following requirements:
 
-- Configure the top-level `parserOptions` property like this:
+- **Node.js**: Ensure you have Node.js installed. Download it from [https://nodejs.org/](https://nodejs.org/).
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+
+1. Clone this repository:
+
+      ```bash
+      git clone https://github.com/your-username/movies-api.git
+
+      ```
+
+2. Change to the project directory:
+   cd movies-api
