@@ -1,19 +1,15 @@
-# Movies API
+# Movies Frontend
 
-This is a RESTful API for managing movie data.
+This is the frontend web application for managing and viewing movie data.
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
      - [Installation](#installation)
-     - [Database Setup](#database-setup)
-     - [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+     - [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [Usage](#usage)
 
 ## Prerequisites
 
@@ -25,12 +21,27 @@ Before you begin, ensure you have met the following requirements:
 
 ### Installation
 
-1. Clone this repository:
+1. Clone the Frontend Repository:
 
       ```bash
-      git clone https://github.com/your-username/movies-api.git
-
+      git clone https://github.com/Emmybritt/movies-recommendation-react.git
       ```
 
-2. Change to the project directory:
-   cd movies-api
+2. Change to the Frontend project directory:
+
+      ```bash
+      cd movies-recommendation-react
+      ```
+
+3. Install project dependencies:
+      ```bash
+      yarn install
+      ```
+
+### Running the Application
+
+To start the Frontend application, run:
+
+```bash
+yarn run dev
+```
