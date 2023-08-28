@@ -7,7 +7,7 @@ export const HeaderLinkPath: HeaderLinkPathAttrr = [
 	},
 	{
 		name: "Movies",
-		path: "/movie",
+		path: "/movies",
 	},
 	{
 		name: "Tv Show",

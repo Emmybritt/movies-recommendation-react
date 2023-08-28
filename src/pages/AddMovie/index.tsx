@@ -71,7 +71,7 @@ const AddMovieComponent: FC = () => {
 							onClick={handleCreateMovie}
 							style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}
 							className="btn btn-primary"
-							title={isLoading ? "Creating movie" : "Create Video"}
+							title={isLoading ? "Creating movie..." : "Create Video"}
 						/>
 					</div>
 				</figure>

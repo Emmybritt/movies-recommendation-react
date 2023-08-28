@@ -20,8 +20,10 @@ const HomePage: FC = () => {
 					<section className="hero">
 						<div className="container">
 							<div className="hero-content">
-								<p className="hero-subtitle">Filmlane</p>
-								<h1 className="h1 hero-title">
+								<p className="hero-subtitle" data-aos="fade-right">
+									Filmlane
+								</p>
+								<h1 className="h1 hero-title" data-aos="flip-left">
 									Unlimited <strong>Movie</strong>, TVs Shows, & More.
 								</h1>
 								<div className="meta-wrapper">
@@ -145,29 +147,6 @@ const HomePage: FC = () => {
 									</li>
 								</ul>
 							</div>
-						</div>
-					</section>
-
-					{/* TOP RATED */}
-					<section className="top-rated">
-						<div className="container">
-							<p className="section-subtitle">Online Streaming</p>
-							<h2 className="h2 section-title">Top Rated Movies</h2>
-							<ul className="filter-list">
-								<li>
-									<button className="filter-btn">Movies</button>
-								</li>
-								<li>
-									<button className="filter-btn">TV Shows</button>
-								</li>
-								<li>
-									<button className="filter-btn">Documentary</button>
-								</li>
-								<li>
-									<button className="filter-btn">Sports</button>
-								</li>
-							</ul>
-							<ul className="movies-list">{/* Map and render your top-rated movie items here */}</ul>
 						</div>
 					</section>
 

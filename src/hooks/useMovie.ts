@@ -38,5 +38,9 @@ export const useMovie = () => {
 			dispatch(deleteMovieById({ _id: id }));
 		}
 	};
-	return { isLoading, movies, handleCreateMovie, setMovie, movie, error, handleChange, message, type, deleteMovie };
+
+	const handleGetFilteredMovie = (genre: string) => {
+		dispatch(getAllMovies(genre));
+	};
+	return { isLoading, movies, handleCreateMovie, setMovie, movie, error, handleChange, message, type, deleteMovie, handleGetFilteredMovie };
 };

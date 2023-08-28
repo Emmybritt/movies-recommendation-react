@@ -9,6 +9,7 @@ import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import PlayCircleOutlinedIcon from "@mui/icons-material/PlayCircleOutlined";
 import CloudDownloadOutlinedIcon from "@mui/icons-material/CloudDownloadOutlined";
+import Image from "../../assets/upcoming-1.png";
 
 const MovieDetails: FC = () => {
 	const dispatch = useAppDispatch();
@@ -27,7 +28,7 @@ const MovieDetails: FC = () => {
 			<section className="movie-detail">
 				<div className="container">
 					<figure className="movie-detail-banner">
-						<img src={movie?.posterURL ?? Movie1} alt="Free guy movie poster" />
+						<img src={movie?.posterURL ? movie?.posterURL : Image} alt="Free guy movie poster" />
 						<button className="play-btn">
 							<PlayCircleOutlineOutlinedIcon />
 						</button>

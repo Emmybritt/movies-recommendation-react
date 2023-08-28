@@ -49,17 +49,20 @@ const initialState: MovieInitialState = {
 	message: "",
 	type: "",
 };
+
 export const createMovie = createAsyncThunk("createMovie", async (action: CreateMoviePayloadAttr, thunkAPI) => {
 	try {
 		const res = await myAxios.post("/create/movie", { ...action });
+		alert("Movie Created successfully");
 		return res.data;
 	} catch (error) {
+		alert("Error creating movie");
 		thunkAPI.dispatch(setMessage({ message: "Error creating movies", type: "fail" }));
 	}
 });
-export const getAllMovies = createAsyncThunk("getMovies", async () => {
+export const getAllMovies = createAsyncThunk("getMovies", async (action?: never) => {
 	try {
-		const res = await myAxios.get("/movies");
+		const res = await myAxios.get(`/movies?genre=${action}`);
 		return res.data;
 	} catch (error) {
 		console.log("Something went wront");

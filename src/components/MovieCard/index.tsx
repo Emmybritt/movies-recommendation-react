@@ -22,11 +22,15 @@ const MovieCard: FC<MovieCardAttr> = ({ posterUrl, name, _id, year, rating, dura
 	const { deleteMovie } = useMovie();
 	return (
 		<li>
-			<div className="movie-card">
+			<div className="movie-card" data-aos="zoom-out-right">
 				<Link to={`/movie-details/${_id}`}>
 					<a href={trailerUrl} target="_blank">
 						<figure className="card-banner">
-							<img src={posterUrl ? posterUrl : Image} alt={name} />
+							<img
+								style={{ objectFit: "cover", width: "100%", height: "100%" }}
+								src={posterUrl ? posterUrl : Image}
+								alt={name}
+							/>
 						</figure>
 					</a>
 				</Link>
