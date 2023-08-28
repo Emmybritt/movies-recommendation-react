@@ -1,6 +1,5 @@
 import { FC, useEffect } from "react";
 import PlayCircleOutlineOutlinedIcon from "@mui/icons-material/PlayCircleOutlineOutlined";
-import Movie1 from "../../assets/movie-4.png";
 import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import { getSingleMoviesById } from "../../store/features/movieSlice";

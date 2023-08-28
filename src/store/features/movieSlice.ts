@@ -60,7 +60,7 @@ export const createMovie = createAsyncThunk("createMovie", async (action: Create
 		thunkAPI.dispatch(setMessage({ message: "Error creating movies", type: "fail" }));
 	}
 });
-export const getAllMovies = createAsyncThunk("getMovies", async (action?: never) => {
+export const getAllMovies = createAsyncThunk("getMovies", async (action: void | string) => {
 	try {
 		const res = await myAxios.get(`/movies?genre=${action}`);
 		return res.data;
