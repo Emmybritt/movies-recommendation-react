@@ -7,7 +7,6 @@ This is the frontend web application for managing and viewing movie data.
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
      - [Installation](#installation)
-     - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
 
@@ -45,3 +44,7 @@ To start the Frontend application, run:
 ```bash
 yarn run dev
 ```
+
+### Usage
+
+Explore and interact with the movie data through the user-friendly web interface.
